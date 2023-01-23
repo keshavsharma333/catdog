@@ -20,9 +20,8 @@ function Main() {
     setLoading(true);
     let data = await fetch(url);
     let parsedData = await data.json();
-    const img = parsedData[0].url;
     setLoading(false);
-    setshowData(img);
+    setshowData(parsedData[0].url);
   };
 
   const dogImage = async () => {
@@ -30,9 +29,8 @@ function Main() {
     setLoading(true);
     let data = await fetch(url);
     let parsedData = await data.json();
-    const img = parsedData[0].url;
     setLoading(false);
-    setshowData(img);
+    setshowData(parsedData[0].url);
   };
 
   const catGif = async () => {
@@ -40,9 +38,8 @@ function Main() {
     setLoading(true);
     let data = await fetch(url);
     let parsedData = await data.json();
-    const img = parsedData[0].url;
     setLoading(false);
-    setshowData(img);
+    setshowData(parsedData[0].url);
   };
 
   const dogGif = async () => {
@@ -50,9 +47,8 @@ function Main() {
     setLoading(true);
     let data = await fetch(url);
     let parsedData = await data.json();
-    const img = parsedData[0].url;
     setLoading(false);
-    setshowData(img);
+    setshowData(parsedData[0].url);
   };
 
   const imageLoad = () => {
